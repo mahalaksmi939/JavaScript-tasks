@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Addition of 3 numbers</title>
+</head>
+
+<body>
+    <script>
+        //1.with parameter and with return value
+        function additionOfThree1(num1, num2, num3) {
+            var sum;
+            sum = num1 + num2 + num3;
+            return sum;
+        }
+        var s1 = additionOfThree1(10, 20, 30)
+        alert(s1)
+
+        //2.without parameters and with return value
+        function additionOfThree2() {
+            var num1, num2, num3;
+            num1 = 100;
+            num2 = 200;
+            num3 = 300;
+            sum = num1 + num2 + num3;
+            return sum;
+        }
+        var s2 = additionOfThree2()
+        alert(s2)
+
+        //3.with parameters and withot return value
+        function additionOfThree3(num1, num2, num3) {
+            var sum;
+            sum = num1 + num2 + num3;
+            alert(sum)
+        }
+        additionOfThree3(50, 60, 76)
+
+        //4.without parameters and withot return value
+        function additionOfThree4() {
+            var a, b, c, result;
+            a = 45;
+            b = 35
+            c = 65
+            result = a+b+c;
+            alert(result)
+        }
+        additionOfThree4()
+      
+    </script>
+</body>
+
+</html>

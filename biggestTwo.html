@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title></title>
+</head>
+
+<body>
+    <script>
+        //1.with parameter and with return value
+        function large(num1, num2) {
+            var res;
+            res = num1 > num2 ? num1 : num2;
+            return res
+        }
+        var l1 = large(2, 4)
+        alert(l1)
+
+        //2.without parameters and with return value
+        function large2() {
+            var a, b, res2;
+            a = 67;
+            b = 89;
+            res2 = a > b ? a : b;
+            return res2
+        }
+        var l2 = large2()
+        alert(l2)
+
+        //3.with parameters and withot return value
+        function large3(num1, num2) {
+            var res3;
+            res3 = num1 > num2 ? num1 : num2;
+            alert(res3)
+        }
+        large3(45, 877)
+
+        //4.without parameters and without return value
+        function large4() {
+            var a, b, res4;
+            a = 123;
+            b = 456;
+            res4 = a > b ? a : b;
+            alert(res4)
+        }
+        large4()
+    </script>
+</body>
+
+</html>

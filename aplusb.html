@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>A plus b square</title>
+</head>
+
+<body>
+    <script>
+        //1.with parameter and with return value
+        function aplusb1(a, b) {
+            var res1 = (a * a) + (b * b) + (2 * a * b);
+            return res1;
+        }
+        var a1 = aplusb1(5, 6)
+        alert(a1)
+
+        //2.without parameters and with return value
+        function aplusb2() {
+            var a1, b1, res2;
+            a1 = 2;
+            b1 = 3;
+            res2 = (a1 * a1) + (b1 * b1) + (2 * a1 * b1);
+            return res2;
+        }
+        var a2 = aplusb2()
+        alert(a2)
+
+        //3.with parameters and withot return value
+        function aplusb3(a3, b3) {
+            var res3 = (a3 * a3) + (b3 * b3) + (2 * a3 * b3);
+            alert(res3)
+        }
+        aplusb3(4, 5)
+
+        //4.without parameters and without return value
+        function aplusb4() {
+            var a4, b4, res4;
+            a4 = 10;
+            b4 = 20;
+            res4 = (a4 * a4) + (b4 * b4) + (2 * a4 * b4);
+            alert(res4)
+        }
+        aplusb4()
+    </script>
+
+</body>
+
+</html>

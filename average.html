@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Average of 6 numbers</title>
+</head>
+
+<body>
+    <script>
+        //1.with parameter and with return value
+        function averageOfSix1(a, b, c, d, e, f) {
+            var result;
+            result = (a + b + c + d + e + f) / 6
+            return result;
+        }
+        var res1 = averageOfSix1(1, 2, 3, 4, 5, 6)
+        alert(res1)
+
+        //2.without parameters and with return value
+        function averageOfSix2() {
+            var a, b, c, d, e, f, res2;
+            a = 10
+            b = 20
+            c = 30
+            d = 40
+            e = 50
+            f = 60
+            res2 = (a + b + c + d + e + f) / 6
+            return res2;
+        }
+        var r2 = averageOfSix2()
+        alert(r2)
+
+        //3.with parameters and withot return value 
+        function averageOfSix3(a, b, c, d, e, f) {
+            var res3;
+            res3 = (a + b + c + d + e + f) / 6
+            alert(res3)
+        }
+        averageOfSix3(9, 8, 7, 6, 5, 4)
+
+        //4.without parameters and without return value
+        function averageOfSix4() {
+            var a, b, c, d, e, f, res4;
+            a = 100
+            b = 200
+            c = 300
+            d = 400
+            e = 500
+            f = 600
+            res4 = (a + b + c + d + e + f) / 6
+            alert(res4)
+        }
+        averageOfSix4()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>SIMPLE INTEREST EXAMPLES</title>
+</head>
+
+<body>
+    <script>  //1.with parameter and with return value
+        function simpleInterest1(p, r, t) {
+            var SI1;
+            SI1 = (p * r * t) / 100;
+            return SI1;
+        }
+        var s1 = simpleInterest1(5000, 2, 1)
+        alert(s1)
+
+        //2.without parameters and with return value
+        function simpleInterest2() {
+            var principal, rate, time, SI2;
+            principal = 10000
+            rate = 5;
+            time = 2;
+            SI2 = (principal * rate * time) / 100;
+            return SI2;
+        }
+        var s2 = simpleInterest2()
+        alert(s2)
+
+        //3.with parameters and withot return value
+        function simpleInterest3(p1, r1, t1) {
+            var SI3;
+            SI3 = (p1 * r1 * t1) / 100;
+            alert(SI3)
+        }
+        simpleInterest3(15000, 3, 2)
+
+        //4.without parameters and without return value
+        function simpleInterest4() {
+            var principal4, rate4, time4, SI4;
+            principal4 = 100000
+            rate4 = 2;
+            time4 = 1;
+            SI4 = (principal4 * rate4 * time4) / 100;
+            alert(SI4)
+        }
+        simpleInterest4()
+
+    </script>
+</body>
+
+</html
