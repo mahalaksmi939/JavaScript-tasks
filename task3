@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> DOM Addition</title>
+</head>
+
+<body>
+    <input type="number" id="id1" placeholder="Enter your first number">
+    <input type="number" id="id2" placeholder="enter your second number">
+    <button onclick="addition()">add</button>
+    <span id="output"></span>
+
+    <script>
+        function addition() {
+            let num1 = eval(document.getElementById("id1").value)
+            let num2 = eval(document.getElementById("id2").value)
+            let result= num1 + num2;
+            document.getElementById("output").innerHTML = result
+        }
+    </script>
+</body>
+
+</html>
