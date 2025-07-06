@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DOM cube example</title>
+</head>
+<body>
+    <input type="number" placeholder="enter your number" id="num1">
+    <button onclick="cube()">CUBE</button>
+    <span id="result"></span>
+
+    <script>
+    function cube(){
+        let a=eval(document.getElementById("num1").value)
+        let cubeOfa=(a*a*a);
+        document.getElementById("result").innerHTML=cubeOfa
+
+    }
+</script>
+</body>
+</html>
