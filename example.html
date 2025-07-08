@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    button{
+      background-color: blue;
+      color: white;
+      border-radius: 10px;
+    }
+    
+  </style>
+</head>
+<body bgcolor="grey">
+    <label type="number ">First Number:</label>
+    <input type="text" placeholder="Enter your  first number" id="n1" > &nbsp;&nbsp;
+    <label type="number ">Second Number:</label>
+    <input type="text" placeholder="Enter your  second number" id ="n2">
+    <br>
+    <br>
+    <button onclick="addition()" >ADD</button>                   &nbsp;&nbsp;
+    <button onclick="sub()"  >SUBTRACTION</button>               &nbsp;&nbsp;
+    <button onclick="multiplication()">MULTIPLICATION</button>   &nbsp;&nbsp;
+    <button onclick="division()">DIVISION</button>               &nbsp;&nbsp;
+    <button onclick="modulus()">MOD</button>                     &nbsp;&nbsp;
+
+    <div id="output"></div>
+
+    <script>
+  function addition(){
+    let num1=eval(document.getElementById("n1").value)
+    document.getElementById("n1").style.backgroundColor="green"
+    let num2=eval(document.getElementById("n2").value)
+    document.getElementById("n2").style.backgroundColor="green"
+    let add=num1+num2
+    document.getElementById("output").innerHTML=add
+
+  }
+
+    function sub(){
+    let num1=eval(document.getElementById("n1").value)
+    document.getElementById("n1").style.backgroundColor="purple"
+    let num2=eval(document.getElementById("n2").value)
+    document.getElementById("n2").style.backgroundColor="purple"
+    let sub=num1-num2
+    document.getElementById("output").innerHTML=sub
+    }
+
+    function multiplication(){
+    let num1=eval(document.getElementById("n1").value)
+    document.getElementById("n1").style.backgroundColor="red"
+    let num2=eval(document.getElementById("n2").value)
+    document.getElementById("n2").style.backgroundColor="red"
+    let mul=num1*num2
+    document.getElementById("output").innerHTML=mul
+    }
+
+    function division(){
+    let num1=eval(document.getElementById("n1").value)
+    document.getElementById("n1").style.backgroundColor="yellow"
+    let num2=eval(document.getElementById("n2").value)
+    document.getElementById("n2").style.backgroundColor="yellow"
+    let divis=num1/num2
+    document.getElementById("output").innerHTML=divis
+    }
+
+    function modulus(){
+    let num1=eval(document.getElementById("n1").value)
+    document.getElementById("n1").style.backgroundColor="tomato"
+    let num2=eval(document.getElementById("n2").value)
+    document.getElementById("n2").style.backgroundColor="tomato"
+    let mod=num1%num2
+    document.getElementById("output").innerHTML=mod
+
+    
+  }
+    </script>
+</body>
+</html>
